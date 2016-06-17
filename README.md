@@ -7,9 +7,9 @@ You can install via npm:
 $ npm install korean-numbers
 ```
 
-or download `korean-numbers.js`.
+or download [korean-numbers.js](https://raw.githubusercontent.com/ohgyun/korean-numbers/master/korean-numbers.js) directly.
 
-korean-numbers.js is available in Common JS and AMD module formats.
+korean-numbers.js is available in CommonJS and AMD module formats.
 
 
 ## Usage
