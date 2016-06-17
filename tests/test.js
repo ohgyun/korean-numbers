@@ -21,7 +21,7 @@ function runTests() {
     let runTest = function (text, expected) {
         let result = koreanNumbers.parse(text);
         if (expected !== result) {
-            console.error('Failed: %s / Expected:%s / Result :%s', text, expected, result);
+            console.error('Failed: %s / Expected: %s / Result: %s', text, expected, result);
             process.exit(1);
         }
     };
@@ -38,6 +38,7 @@ function runTests() {
     });
 }
 
+// Test parse()
 test('백', 100);
 test('100', 100);
 test('이백', 200);

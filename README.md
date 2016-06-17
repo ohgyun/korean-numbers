@@ -14,11 +14,35 @@ korean-numbers.js is available in CommonJS and AMD module formats.
 
 ## Usage
 
+Loading:
 ```
+// In CommonJS module
 var koreanNumbers = require('korean-numbers');
 
+// In AMD module
+require([
+    'koreanNumbers'
+], function (koreanNumbers) {
+    ...
+});
+```
+
+Parsing:
+```
+// Parse korean numbers
 koreanNumbers.parse('백이십삼만'); //-> 1230000
 koreanNumbers.parse('123만'); //-> 1230000
+
+// Parse korean money
+koreanNumbers.parseMoney('백이십삼만원'); //-> 1230000
+koreanNumbers.parseMoney('123만원'); //-> 1230000
+```
+
+
+## Test
+
+```
+$ npm test
 ```
 
 
